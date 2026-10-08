@@ -164,8 +164,8 @@ self.addEventListener('push', e => {
     try { for (const n of await self.registration.getNotifications({ tag })) n.close() } catch {}
     await self.registration.showNotification(data.title || 'Sekerinskiy 🐻', {
       body: data.body || '',
-      icon: 'icon-512.png',
-      badge: 'icon-180.png',
+      icon: 'icon-512-v2.png',
+      badge: 'icon-180-v2.png',
       tag,
       renotify: true
     })

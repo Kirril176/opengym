@@ -62,7 +62,7 @@ const maybeRestNotification = async () => {
     // first instead of stacking a second banner. No body — it only repeated the title.
     // Android Chrome forbids the Notification constructor (Illegal constructor) - the
     // service-worker registration path is the one that actually pops there.
-    const opts = { tag: 'rest-timer', icon: 'icon-512.png' }
+    const opts = { tag: 'rest-timer', icon: 'icon-512-v2.png' }
     if (reg?.showNotification) { reg.showNotification(t('Rest over — next set!'), opts); return }
     new Notification(t('Rest over — next set!'), opts)
   } catch {
